@@ -1,15 +1,136 @@
 body {
-    background: #02052B;
-    font-family: "Roboto Mono", monospace;
-    
+  background: #02052b;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  border-bottom: 1px solid;
+  padding: 20px 0;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: -5px;
+}
+h2 {
+    font-size: 40px;
+    margin-top: -45px;
+    color: white;
+    font-weight: 400px
+}
+
+#temperature {
+    font-size: 40px;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    color: white;
+    font-weight: 400px;
+}
+
+#weather-unit{
+    font-size: 20px;
+    position: relative;
+    bottom: 60px;
+    right: 3px;
+    color: white;
+    font-weight: 400px;
+}
+
+
+
+p {
+    font-size: 20px;
+    color: white;
 
 }
-.weather-app {
-    background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 45px;
-    padding: 30px;
-    box-shadow: 0 30px 50px;
-    border-radius: 20px;
+
+.weather-description {
+    opacity: 0.5;
+    color: white;
+    margin-top: -45px;
    
+}
+
+.weather-state{
+    color: white;
+    margin-top: -15px;
+    font-size: 15px;
+}
+
+strong {
+    opacity: 0.5;
+}
+
+.weather-date{
+    margin-top: 30px;
+    margin-right: 78%;
+    opacity: 0.8;
+    
+}
+
+.weather-app {
+  background: radial-gradient(
+    780px at 37.8% 100.3%,
+    rgb(19, 55, 115) 2.2%,
+    rgb(32, 7, 80) 20.2%,
+    rgb(27, 88, 111) 58.6%,
+    rgb(115, 88, 44) 75%,
+    rgb(99, 19, 90) 89.6%,
+    rgb(12, 51, 76) 96.1%
+  );
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding: 30px;
+  box-shadow: 0 30px 50px;
+  border-radius: 20px;
+}
+
+.city-input {
+  background: #02052b;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  width: 80%;
+  padding: 6px 8px;
+  font-size: 16px;
+}
+
+.city-input:hover {
+    background: white;
+    color: #02052b;
+    
+}
+
+.search-form-button {
+  background: #02052b;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 8px 11px;
+  font-size: 16px;
+}
+
+.search-form-button:hover {
+  background: white;
+  color: #02052b;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid;
+  padding: 15px 0 0 0; 
+  margin-top: 30px;
+  font-size: 14px;
+  color:white; 
+  opacity: 0.6;
+  margin-top: 80px;
+}
+
+a {
+    color:#DBB4DB;
+
+}
+
+a:hover {
+    color: black;
+}

@@ -17,18 +17,19 @@
     🌤
    </h1> 
 <h2>Johannesburg</h2>
-12°C
+<span id="temperature">12</span> <span id="weather-unit">°C</span>
 <p>
-   Friday 08:51, moderate rain
+   <div class="weather-description">Moderate rain</div> 
    <br>
-Humidity: 87%, Wind: 7.2km/h 
+<div class="weather-state">Humidity: <strong>87%</strong> Wind: <strong>7.2km/h</strong>
+<div class="weather-date">Friday 08:51</div> 
 </p>
-</div>
+
 </header>
     <main>
-        <form>
-            <input type ="text" placeholder="Enter a city.." required>
-            <input type="submit" value="Search">
+        <form class="search-form">
+            <input type ="text" placeholder="Enter a city.." required class="city-input">
+            <input type="submit" value="Search" class="search-form-button">
         </form>
     </main>
 

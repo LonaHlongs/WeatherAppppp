@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
      <h1>
     🌤
    </h1> 
-<h2>Johannesburg</h2>
+<h2 id="weather-city">Johannesburg</h2>
 <span id="temperature">12</span> <span id="weather-unit">°C</span>
 <p>
    <div class="weather-description">Moderate rain</div> 
@@ -27,13 +27,17 @@
 
 </header>
     <main>
-        <form class="search-form">
-            <input type ="text" placeholder="Enter a city.." required class="city-input">
+        <form class="search-form" id="search-form">
+            <input type ="text" placeholder="Enter a city.." required class="city-input" id="city-input">
             <input type="submit" value="Search" class="search-form-button">
         </form>
     </main>
 
    <footer>This project was coded by <a href="https://github.com/" target="_blank">Lona Hlongwana</a> and is <a href="https://github.com/LonaHlongs/My-WeatherApp--" target="_blank">on GitHub</a> and <a href="https://app.netlify.com/teams/lonahlongs/sites" target="_blank"> hosted on Netlify</a></footer>
 </div>
+
+<script src="src/index.js"></script>
 </body>
 </html>
+
+

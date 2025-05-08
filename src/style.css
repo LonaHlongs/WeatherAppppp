@@ -21,6 +21,11 @@ h2 {
   font-weight: 400px;
 }
 
+#icon{
+  position : relative;
+  bottom: 55px;
+}
+
 #temperature {
   font-size: 40px;
   position: relative;
@@ -81,7 +86,7 @@ strong {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 45px;
-  padding: 30px;
+  padding: 50px;
   box-shadow: 0 30px 50px;
   border-radius: 20px;
 }

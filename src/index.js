@@ -10,15 +10,14 @@ function updateWeather(response) {
   let weatherDateElement = document.querySelector("#weather-date");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
- 
-  
+
   weatherCityElement.innerHTML = response.data.city;
   weatherDescriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   weatherDateElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
-  iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon"/>`;
 }
 function formatDate(date) {
   let hours = date.getHours();
@@ -50,7 +49,6 @@ function searchCity(city) {
   axios.get(apiUrl).then(updateWeather);
 }
 
-
 function handleSearchSubmit(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
@@ -58,9 +56,40 @@ function handleSearchSubmit(event) {
   searchCity(cityInput.value);
 }
 
+function displayForecast() {
+let forecastElement = document.querySelector("#forecast");
+
+let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+let forecastHtml = "";
+
+
+days.forEach(function (day) {
+forecastHtml = 
+  forecastHtml +
+
+`
+   <div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">☀️</div>
+    <div class="weather-forecast-temperatures">
+    <div class="weather-forecast-temperature">
+        17°
+    </div>
+    <div class="weather-forecast-temperature">
+        <strong>9°</strong>
+    </div>
+</div>
+</div>
+`;
+});
+
+forecastElement.innerHTML = forecastHtml;
+}
+
+
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Johannesburg");
-
+displayForecast();
